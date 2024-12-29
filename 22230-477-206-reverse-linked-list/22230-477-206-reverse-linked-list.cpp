@@ -49,3 +49,14 @@ public:
 //                 curr=nextNode;
 //             }       
 //             return prev;
+
+
+// Time Complexity Analysis
+// Each recursive call processes one node in the linked list and performs constant work (updating pointers).
+// The recursion continues until the curr pointer becomes NULL, which happens after visiting every node in the linked list.
+// If there are n nodes in the list, the recursion will happen n times.
+// Thus, the time complexity is O(n), where n is the number of nodes in the linked list.
+
+// Space Complexity Analysis
+// The space complexity comes from the recursive calls. In the worst case, where the linked list has n nodes, there will be n recursive calls on the stack (one for each node).
+// Therefore, the space complexity is O(n) due to the recursion depth.
